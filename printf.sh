@@ -1,7 +1,9 @@
 #!/usr/bin/sh
 
 if [ $# -eq 0 ]; then
-	prinf "Es wurden keine Parameter angegeben.\n"
+	prinf "Es wurden keine Parameter angegeben.\n" "$0"
+	exit 1
+fi	
 
 programmname="$o"
 parameter="$1"
