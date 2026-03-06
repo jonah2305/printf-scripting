@@ -1,5 +1,11 @@
 #!/usr/bin/sh
 
-printf "\033[34m06.03.2026\033[om\n"
+if [ $# -eq 0 ]; then
+	prinf "Es wurden keine Parameter angegeben.\n"
+
+programmname="$o"
+parameter="$1"
+
+printf "\033[34m06.03.2026\033[0m\n"
 printf "Hallo Zusammen\n"
-printf "Heute ist ein schönes Wetter\n"
+printf "\033[33mHeute ist ein schönes Wetter\033[0m\n"
